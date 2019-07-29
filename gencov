@@ -1,0 +1,6 @@
+rm -rf out
+gdc-7 -fprofile-arcs -ftest-coverage curious.d
+./a.out
+lcov --rc lcov_branch_coverage=1 --rc lcov_excl_line=assert -c -d . -b . -o curious.info
+genhtml --branch-coverage --highlight --demangle-cpp curious.info --output-directory out
+rm -rf *.gcda *gcno *.info *.out

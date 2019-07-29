@@ -13,7 +13,7 @@ void main() {
     writefln("bilangan terbesar adalah %d", cariMax3Bil_05(bil1, bil2, bil3));
 		
 	// menghitung nilai mutu
-	double uts, uas, tugas; 
+	double uts, uas, tugas;
 	int jumHadir;
 	uts = 65;
 	uas = 40;
