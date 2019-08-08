@@ -1,0 +1,6 @@
+rm -rf outb *.rs.gcov
+gdc-7 -O0 -fprofile-arcs -ftest-coverage b_selection.d
+./a.out
+lcov -c -d . -o b_selection.info --ignore-errors SOURCE --no-external --rc lcov_branch_coverage=1 --rc lcov_excl_line=assert --rc lcov_function_coverage=1
+genhtml --highlight --legend  --branch-coverage --function-coverage --demangle-cpp --ignore-errors SOURCE -o outb b_selection.info
+rm -rf *.gcda *gcno *.info *.out

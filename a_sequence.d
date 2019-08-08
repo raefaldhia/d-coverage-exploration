@@ -1,6 +1,9 @@
 import std.stdio;
 
 void main() {
+	isYearKabisat(6, 2000);
+	isSuhuPadat(50);
+	isSuhuPadat(-1);
 	// menghitung luas limas
 	float alasLimas, tinggiLimas;
 	alasLimas = 12.95f;

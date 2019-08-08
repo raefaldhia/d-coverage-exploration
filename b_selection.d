@@ -20,6 +20,7 @@ void main() {
 	tugas = 30;
 	jumHadir = 10;
 	writefln("nilai Mutu%d", hitNilaiMutu_06(uts, uas, tugas, jumHadir));
+    writefln("Nilai mutu2 %c\n", hitNilaiMutu_062(uts, uas, tugas, jumHadir));
 
 	// menghitung jumlah hari dalam suatu bulan pada tahun tertentu
 	int month, year, numDays;
@@ -31,6 +32,46 @@ void main() {
     } else {
 		writeln("Invalid month.");
 	}
+
+	writefln("\nUji method get upah, jam masuk 8, 16");
+    writefln("\nUpah : %d", getUpah_063(8, 18));
+
+    writefln("\nUji method angka ganjil dengan angka -2");
+    writefln("\n");
+	menentukanBilGanjil_064(-2);
+    
+    writefln("\nUji method nama hari dari angka");
+    writefln("\n%s", getDayFromNumber_07(1));
+
+    writefln("\nUji method kembalian. Nominal 100k, belanja 48k");
+    writefln("\n");
+	tukarNominalUang_08(100000, 48000);
+
+    writefln("\nUji titik get kuadran dengan titik 1, 9");
+    writefln("\nKuadran : %d", getKuadran_09(1, 9));
+
+    writefln("\nUji method tampil suhu dengan suhu 40 derajat");
+    writefln("\nWujud: ");
+    tampilSuhu_10(40);
+	    
+    writefln("\nUji method get size kaos T = 180, B = 70");
+    writefln("\nUkuran %c", getSizeKaos_12(180, 70));
+
+    writefln("\nUji method calculate gajih");
+    writefln("\nGaji: %d", calCulateGajih_17('B', 70));
+
+    writefln("\nUji method jumlah hari dalam bulan (case)");
+    writefln("\nJumlah hari: %d", getNumberDayMonth2_10(2, 2020));
+
+    writefln("\n");
+    OutputOperasiPilihan_19('A', 19);
+    writefln("\n");
+    OutputSwitchSwitch_20('A', 5);
+    writefln("\n");
+    OutputSwitchSwitch_20_1('D', 2);
+
+    writefln("\nUji method get nilai terbilang");
+    writefln("\n%s", nilaiTerbilang(5892));
 }
 
 int cariMax3Bil_05(int A, int B, int C) {
